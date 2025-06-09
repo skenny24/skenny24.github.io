@@ -5,7 +5,7 @@ permalink: /sigma/
 ---
 
 # THE SIGMA COGNITIVE ARCHITECTURE
-### Sigma is a cognitive architecture (AGI) that is grounded in a graphical architecture. This guide will walk you through setting up and running Sigma. You can then proceed to the in-depth tutorial. It requires some familiarity with Lisp and Quicklisp, but there are links to additional information to help guide you if you're new to Lisp.
+Sigma is a cognitive architecture (AGI) that is grounded in a graphical architecture. This guide will walk you through setting up and running Sigma. You can then proceed to the in-depth tutorial. It requires some familiarity with Lisp and Quicklisp, but there are links to additional information to help guide you if you're new to Lisp.
 
 [Developed at the University of Southern California](http://cogarch.ict.usc.edu)  
 Current release: Sigma38  
@@ -13,9 +13,8 @@ Current release: Sigma38
 ## Overview ##
 
 * If you're new to lisp, there is a lisp tutorial [here](https://gigamonkeys.com/book/)  
-* A full Sigma tutorial is available [here](https://github.com/skenny24/sigma/blob/master/tutorial.md)  
-* Sigma reference sheet can be found [here](ReferenceSheet.md)  
-* Release Notes are available [here](ReleaseNotes.md)
+* A full Sigma tutorial is available [here](/tutorial)  
+* Sigma reference sheet can be found [here](/referencesheet)  
 * For help contact: sigma@ict.usc.edu
 
 ---
@@ -81,7 +80,13 @@ IMPORTANT NOTE: to compile new files within the sigma package the package direct
 ```lisp
 (in-package :sigma)
 ```
-### Older Releases available [here](https://bitbucket.org/sigma-development/sigma-archive/src)  ###
+
+---
+Once you've completed the setup instructions above you're ready to run through the [full Sigma tutorial](/tutorial)  
+
+---
+
+### Older Releases are Available [here](https://bitbucket.org/sigma-development/sigma-archive/src)  ###
 
 Download the archive, releases < Sigma38 require the following steps
 

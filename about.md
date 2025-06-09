@@ -2,6 +2,7 @@
 layout: default
 title: About
 ---
-# CONTENT COMING SOON!
+# About page
 
+sarah kenny | technical writer, content engineer
 

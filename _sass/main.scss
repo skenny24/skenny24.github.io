@@ -1,5 +1,5 @@
 body {
-  background-color: #111;
+  background-color:  #4c4948;
   color: #fff;
   font-family: sans-serif;
 }
@@ -20,13 +20,23 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
+/* NEW: Wrap content and code in a common width */
+.content,
+.content pre,
+.content code {
+  max-width: 800px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* PRE block styling */
 pre {
   background-color: #2e2e2e;
   color: #a1ffaf;
   padding: 1em;
   border-radius: 6px;
   overflow-x: auto;
-  max-width: 800px;
+  //max-width: 800px;
   margin: 1em 0;
   white-space: pre;
   text-indent: 0;
@@ -35,7 +45,7 @@ pre {
   line-height: 1.5;
 }
 
-/* ✅ Core fix: neutralize <code> inside <pre> */
+/* Core fix: neutralize <code> inside <pre> */
 pre code {
   all: unset;           /* Completely resets default styles */
   display: block;
@@ -45,7 +55,7 @@ pre code {
   font-size: inherit;
 }
 
-/* ✅ Extra list compatibility */
+/* Extra list compatibility */
 li pre,
 li > code {
   margin-left: 0 !important;
@@ -53,12 +63,13 @@ li > code {
   text-indent: 0;
 }
 
-/* ✅ Redundant defensive override */
+/* Redundant defensive override */
 .markdown-body pre {
   margin-left: 0 !important;
   text-indent: 0;
 }
 
+/* Inline code styling */
 code {
   font-family: monospace;
   font-size: 0.95em;
@@ -66,12 +77,15 @@ code {
   background-color: #2e2e2e;
   border-radius: 4px;
   text-indent: 0;
+//  max-width: 800px;
+  display: inline-block;
+  box-sizing: border-box;
 }
 
 /* Layout styles below remain unchanged */
 
 .site-header {
-  background-color: #444422;
+  background-color: #5e8563;
   padding: 1em;
 }
 
@@ -100,8 +114,29 @@ code {
 .intro {
   display: flex;
   align-items: flex-start;
-  gap: 1.5em;
+  gap: 3.5em;
   margin-bottom: 2em;
+  width: 100%;
+}
+
+.intro-text {
+  flex: 3;
+}
+
+.tools-used {
+  flex: 1.0;
+  min-width: 150px;
+}
+
+.tools-used ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.tools-used li {
+  margin-bottom: 0.25em;
+  font-style: italic;
 }
 
 .intro-image {
@@ -111,9 +146,17 @@ code {
 }
 
 .page-container {
-  max-width: 1400px;       // Adjust width as needed
+  max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 1rem;
   padding-right: 1rem;
 }
+
+.content-area {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
