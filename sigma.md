@@ -20,7 +20,7 @@ Current release: Sigma38
 ---
 ### Where to get Sigma ###
 
-Then you can download Sigma using the following command--it requires you to have [git](http://git-scm.com/) installed on your machine.
+You can download Sigma using the following command--it requires you to have [git](http://git-scm.com/) installed on your machine.
 
 ```lisp
 $ git clone https://github.com/skenny24/sigma.git
@@ -74,7 +74,7 @@ The commands above can be added to your initialization file so that you need not
 ```
 Then every time you start up lispworks Sigma will be loaded and you can simply run ```(in-package :sigma)```
 
-Additional commands can also be added to set your default package to sigma every time you launch LispWorks. A sample LispWorks initalization file can be found [here](src/sigma-init.lisp)
+Additional commands can also be added to set your default package to sigma every time you launch LispWorks. A sample LispWorks initalization file can be found [here](https://github.com/skenny24/sigma/blob/master/src/sigma-init.lisp)
 
 IMPORTANT NOTE: to compile new files within the sigma package the package directive should be added at the beginning of the source file before compiling
 ```lisp
